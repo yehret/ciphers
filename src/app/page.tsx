@@ -149,10 +149,6 @@ export default function CipherApp() {
 
           <div className="my-6">{configComponents[activeTab]}</div>
 
-          {activeTab === 'playfair' && (
-            <PlayfairConfig playfairKey={playfairKey} setPlayfairKey={setPlayfairKey} />
-          )}
-
           <div className="flex justify-center pt-4">
             <button
               onClick={handleProcess}
